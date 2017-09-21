@@ -12,30 +12,26 @@ class Dice:
 
 
 class Desk:
-    A = Dice()
-    B = Dice()
-    C = Dice()
-    D = Dice()
-    E = Dice()
+    dices = [Dice() for _ in range(5)]
 
     def move(Desk, dices: int):
         i=16
         if (dices > i):
-            Desk.E.moves()
+            Desk.dices[4].moves()
             dices-=i
         i=i/2
         if (dices > i):
-            Desk.D.moves()
+            Desk.dices[3].moves()
             dices-=i
         i=i/2
         if (dices > i):
-            Desk.C.moves()
+            Desk.dices[2].moves()
             dices-=i
         i=i/2
         if (dices > i):
-            Desk.B.moves()
+            Desk.dices[1].moves()
             dices-=i
         i=i/2
         if (dices > i):
-            Desk.A.moves()
+            Desk.dices[0].moves()
             dices-=i
