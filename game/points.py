@@ -20,7 +20,11 @@ class Points:
     chaince = "is null"
     name = " "
 
+    def rename(self, name):
+        Points.name=name
+
     def out(self):
+        print(Points.name)
         print("Your points:: \nFirst: " + str(Points.first))
         print("Second: " + str(Points.second))
         print("Third: " + str(Points.third))
