@@ -6,8 +6,9 @@ class Move:  # zwraca (co ktos ma, kosci, ktory ruch)
     check = 1
 
     def move(self):
-        print("Dices 1: " + self.desk.dices[0] + " Dices 2: " + self.desk.dices[1] + " Dices 3: " + self.desk.dices[2]
-            + " Dices 4: " + self.desk.dices[3] + " Dices 5: " + self.desk.dices[4])
+
+        print("Dices 1: " + str(self.desk.dices[0]) + " Dices 2: " + str(self.desk.dices[1]) + " Dices 3: " + str(self.desk.dices[2])
+            + " Dices 4: " + str(self.desk.dices[3]) + " Dices 5: " + str(self.desk.dices[4]))
         while self.check != 4:
             move = int(input("What you want to do? \n [1]I have somethink and I want to write this \n [2] I want to throw my dices "))
             if self.check == 3 and move == 2:
