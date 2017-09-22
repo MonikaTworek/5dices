@@ -22,7 +22,7 @@ class Points:
         self.name = " "
 
     def rename(self, name):
-        self.name=name
+        self.name = name
 
     def out(self):
         print(self.name)
@@ -42,7 +42,7 @@ class Points:
         print("Poker: " + str(self.poker))
         print("Chaince: " + str(self.chaince))
 
-    def add(self, what: int, how_much: int):
+    def add(self, what, how_much):
         while switch(what):
             if case(1):
                 self.first = how_much

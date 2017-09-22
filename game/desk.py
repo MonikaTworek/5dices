@@ -16,21 +16,21 @@ class Desk:
     def move(self, dices: int):
         i = 16
         if dices > i:
-            Desk.dices[4].moves()
+            self.dices[4].moves()
             dices -= i
         i = i / 2
         if dices > i:
-            Desk.dices[3].moves()
+            self.dices[3].moves()
             dices -= i
         i = i / 2
         if dices > i:
-            Desk.dices[2].moves()
+            self.dices[2].moves()
             dices -= i
         i = i / 2
         if dices > i:
-            Desk.dices[1].moves()
+            self.dices[1].moves()
             dices -= i
         i = i / 2
         if dices > i:
-            Desk.dices[0].moves()
+            self.dices[0].moves()
             dices -= i

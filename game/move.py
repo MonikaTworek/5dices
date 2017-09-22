@@ -6,9 +6,9 @@ class Move:  # zwraca (co ktos ma, kosci, ktory ruch)
     check = 1
 
     def move(self):
-        print("Dices 1: " + str(self.desk.dices[0]) + " Dices 2: " + str(self.desk.dices[1]) + " Dices 3: " + str(self.desk.dices[2])
-            + " Dices 4: " + str(self.desk.dices[3]) + " Dices 5: " + str(self.desk.dices[4]))
         while self.check != 4:
+            print("Dices 1: " + str(self.desk.dices[0].rank) + " Dices 2: " + str(self.desk.dices[1].rank) + " Dices 3: " + str(self.desk.dices[2].rank)
+                + " Dices 4: " + str(self.desk.dices[3].rank) + " Dices 5: " + str(self.desk.dices[4].rank))
             moves = int(input("What you want to do? \n [1]I have somethink and I want to write this \n [2] I want to throw my dices "))
             if self.check == 3 and moves == 2:
                 print("You must writnig your score!")
