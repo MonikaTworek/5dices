@@ -3,9 +3,6 @@ from random import randrange
 
 class Dice:
     def __init__(self):
-        self.rank = int
-
-    def __init__(self):
         self.rank = randrange(1, 6)
 
     def moves(self):
@@ -13,7 +10,8 @@ class Dice:
 
 
 class Desk:
-    dices = [Dice() for _ in range(5)]
+    def __init__(self):
+        self.dices = [Dice() for _ in range(5)]
 
     def move(self, dices: int):
         i = 16
