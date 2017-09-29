@@ -6,6 +6,7 @@ class Move:  # zwraca (co ktos ma, kosci, ktory ruch)
     check = 1
 
     def move(self):
+        self.desk.move(31)
         while self.check != 4:
             print("Dices 1: " + str(self.desk.dices[0].rank) + " Dices 2: " + str(self.desk.dices[1].rank) + " Dices 3: " + str(self.desk.dices[2].rank)
                 + " Dices 4: " + str(self.desk.dices[3].rank) + " Dices 5: " + str(self.desk.dices[4].rank))
